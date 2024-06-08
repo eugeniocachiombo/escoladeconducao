@@ -82,6 +82,13 @@
                 <ul>
                     <li><a href="../instrutor/form-cadastro.php">Cadastrar</a></li>
                     <li><a href="../instrutor">Listar</a></li>
+                    <li><a href="../instrutor/especializar.php">Especializar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Especialidades</a>
+                <ul>
+                    <li><a href="../especialidade">Listar</a></li>
                 </ul>
             </li>
             <li>

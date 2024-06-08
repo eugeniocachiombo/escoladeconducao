@@ -9,7 +9,7 @@
         <h1 style="font-family: TH Charmonman; font-weight: bold; font-size: 50px;">Seja Bem-vindo</h1>
     </div>
 
-    <div class="form-login" style="display: flex; align-items: center; justify-content: center; ">
+    <div class="form-login " style="display: flex; align-items: center; justify-content: center; ">
         <div style="font-size: 30vh; ">
             <i class="fas fa-car carro-inicio" style="color: gray;"></i>
         </div>

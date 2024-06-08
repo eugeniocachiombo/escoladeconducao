@@ -1,5 +1,6 @@
 <?php include "../inclusao/head.php"; ?>
 <?php include "../inclusao/header.php"; ?>
+<?php include "../regras_sessao/somente-logado.php"; ?>
 <link rel="stylesheet" href="../assets/css/inputs.css">
 
 <?php include "../admin/processa_formulario.php"; ?> <!-- Alterado para o arquivo de processamento de administração -->

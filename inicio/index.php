@@ -1,5 +1,6 @@
 <?php include "../inclusao/head.php"; ?>
 <?php include "../inclusao/header.php"; ?>
+<?php include "../regras_sessao/somente-logado.php"; ?>
 <link rel="stylesheet" href="../assets/css/inputs.css">
 
 <main style="display: flex; justify-content: center;">

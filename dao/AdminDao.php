@@ -1,11 +1,11 @@
 <?php
 
-include '../classes/admin.php'; // Alterado para incluir a classe Admin
+include '../classes/admin.php'; 
 require_once 'conexao.php'; 
 
 class AdminDao {
     
-    public function cadastrarAdmin($admin) { // Alterado para cadastrarAdmin
+    public function cadastrarAdmin($admin) { 
         try {
             $conexao = getConexao(); 
             $stmt = $conexao->prepare("INSERT INTO usuario (nome, data_nascimento, genero, acesso, email, palavra_passe, numero_de_telefone, numero_secundario) 
@@ -28,10 +28,10 @@ class AdminDao {
     }
 
     
-    public function listarAdministradores() { // Alterado para listarAdministradores
+    public function listarAdministradores() { 
         try {
             $conexao = getConexao(); 
-            $stmt = $conexao->prepare("SELECT * FROM usuario WHERE acesso = 'admin'"); // Alterado para 'admin'
+            $stmt = $conexao->prepare("SELECT * FROM usuario WHERE acesso = 'admin'"); 
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
@@ -40,10 +40,10 @@ class AdminDao {
         }
     }
 
-    public function listarAdminID($id) { // Alterado para listarAdminID
+    public function listarAdminID($id) { 
         try {
             $conexao = getConexao(); 
-            $stmt = $conexao->prepare("SELECT * FROM usuario WHERE acesso = 'admin' AND id = :id"); // Alterado para 'admin'
+            $stmt = $conexao->prepare("SELECT * FROM usuario WHERE acesso = 'admin' AND id = :id"); 
             $stmt->bindValue(':id', $id);
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
@@ -54,7 +54,7 @@ class AdminDao {
     }
 
     
-    public function atualizarAdmin($admin) { // Alterado para atualizarAdmin
+    public function atualizarAdmin($admin) { 
         try {
             $conexao = getConexao(); 
             $stmt = $conexao->prepare("UPDATE usuario 
@@ -78,7 +78,7 @@ class AdminDao {
         }
     }
     
-    public function eliminarAdmin($id) { // Alterado para eliminarAdmin
+    public function eliminarAdmin($id) { 
         try {
             $conexao = getConexao(); 
             $stmt = $conexao->prepare("DELETE FROM usuario WHERE id = :id");

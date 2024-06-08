@@ -46,7 +46,7 @@
             </div>
         </div>
     </form>
-    <script src="../assets/js/validar-campos-utilizador.js"></script>
+    <script src="../assets/js/validar-campos-utilizador-admin.js"></script>
 </div>
 
 <?php include "../inclusao/foot.php"; ?>

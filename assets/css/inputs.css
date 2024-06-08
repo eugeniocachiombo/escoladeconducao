@@ -20,7 +20,8 @@
 
   
   .formulario input[type=text].input, input[type=email].input, 
-  input[type=password].input, input[type=date].input, .select  {
+  input[type=password].input, input[type=date].input, .select, 
+  input[type=number].input {
     padding: 11px 10px;
     font-size: 0.75rem;
     border: 2px #222 solid;
@@ -29,7 +30,8 @@
   }
   
   .formulario input[type=text].input:focus, input[type=email].input:focus, 
-  input[type=password].input:focus, input[type=date].input:focus {
+  input[type=password].input:focus,  input[type=date].input:focus,  
+  input[type=number].input {
     outline: none;
   }
   

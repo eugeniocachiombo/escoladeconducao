@@ -92,14 +92,14 @@
     font-weight: 900; 
     font-size: 35vh;
     color: gray;
-    transition: transform 1.5s ease, color 1.5s ease; /* Adicionando transição para transform e cor */
-    transform-origin: center; /* Define o ponto de origem da transformação */
-    transform: scale(1); /* Define a escala inicial */
+    transition: transform 1.5s ease, color 1.5s ease; 
+    transform-origin: center; 
+    transform: scale(1); 
   }
   
   .carro-inicio:hover:before {
     color: black;
-    transform: scale(2); /* Define a escala final (o valor pode ser ajustado conforme necessário) */
+    transform: scale(2); 
   }
   
   

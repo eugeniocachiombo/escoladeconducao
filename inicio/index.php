@@ -10,7 +10,7 @@
 
     <div class="form-login" style="display: flex; align-items: center; justify-content: center; ">
         <div style="font-size: 30vh; ">
-            <i class="fas fa-car" style="color: gray;"></i>
+            <i class="fas fa-car carro-inicio" style="color: gray;"></i>
         </div>
     </div>
 </main>

@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (camposVazios.length > 0) {
             event.preventDefault();
-            alert("Por favor, preencha todos os campos obrigatórios.");
+            alert("Por favor, preencha todos os campos.");
         }
     });
 

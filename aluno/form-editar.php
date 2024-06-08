@@ -23,7 +23,7 @@
 
                 <label for="genero" class="text">Gênero:</label>
                 <select name="genero" class="input select">
-                    <option style="display: none;">Selecione...</option>
+                    <option style="display: none;" value="">Selecione...</option>
                     <?php if ($dadosAluno["genero"]  == "M") { ?>
                         <option selected value="M">Masculino</option>
                         <option value="F">Feminino</option>

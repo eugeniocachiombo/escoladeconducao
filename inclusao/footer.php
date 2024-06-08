@@ -48,11 +48,12 @@ footer {
 }
 
 .mapa {
-    /* Estilos para o mapa ou imagem da localização */
+    
 }
 
 </style>
 
+<?php if (isset($_SESSION["usuario_id"])) { ?>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
@@ -71,6 +72,6 @@ footer {
         </div>
     </div>
 </footer>
-
+<?php } ?>
 
 

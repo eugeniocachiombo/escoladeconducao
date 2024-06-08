@@ -59,6 +59,8 @@
     }
 </style>
 
+<?php if (isset($_SESSION["usuario_id"])) { ?>
+ 
 <header>
     <a href="#" class="logotipo" style="font-size: 35px;">
         <?php
@@ -93,3 +95,5 @@
         </ul>
     </nav>
 </header>
+
+<?php } ?>

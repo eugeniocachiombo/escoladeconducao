@@ -8,5 +8,6 @@
     <label for="input" class="text">Palavra-passe:</label>
     <input type="text" placeholder="******" name="passe" class="input"> <br>
 
-    <button> Entrar </button>
+    <button> Entrar </button> <br>
+    <a href="../cadastroAdmin/form-cadastro.php" style="text-align: center; text-decoration: none;">Cadastrar-se</a>
 </div>

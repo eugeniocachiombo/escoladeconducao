@@ -51,3 +51,17 @@ if (isset($_GET["id"])) {
     $dadosAluno = $alunoDao->listarAlunosID($id);
 }
 ?>
+
+<?php  // Eliminar
+if (isset($_POST["btnEliminar"])) {
+    $id = $_POST["id"];
+    $alunoDao = new AlunoDao();
+    $resultado = $alunoDao->eliminarAluno($id);
+
+    if ($resultado) {
+        echo '<div style="text-align: center; background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Aluno eliminado com sucesso!</div>';
+    } else {
+        echo '<div style="text-align: center; background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Erro ao eliminar aluno. Por favor, tente novamente.</div>';
+    }
+}
+?>

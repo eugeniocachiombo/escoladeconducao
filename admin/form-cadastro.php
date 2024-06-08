@@ -1,6 +1,6 @@
 <?php include "../inclusao/head.php"; ?>
 <link rel="stylesheet" href="../assets/css/inputs.css">
-<?php include "../instrutor/processa_formulario.php"; ?>
+<?php include "../admin/processa_formulario.php"; ?>
 
 <div class="principal">
     <form action="" method="post" style="width: 100%;">
@@ -8,12 +8,13 @@
 
             <div class="logo" style="display: flex; align-items: center; justify-content: center; font-size: 40px;">
                 <span class="nome-escola" style="font-family: TH Charmonman; font-weight: bold;">
-                    <span><i class="fas fa-user"></i></span>Cadastrar Instrutor
+                    <span><i class="fas fa-user"></i></span>Cadastrar Administrador <!-- Alterado o texto para Cadastrar Administrador -->
                 </span>
             </div>
 
             <div class="formulario">
-                <h1>Cadastrar</h1> <hr> <br>
+                <h1>Cadastrar</h1>
+                <hr> <br>
                 <label for="nome" class="text">Nome: </label>
                 <input type="text" placeholder="Nome completo" name="nome" class="input"> <br>
 
@@ -41,12 +42,12 @@
                 <label for="numero_secundario" class="text">Número Secundário:</label>
                 <input type="text" maxlength="9" placeholder="Número secundário" name="numero_secundario" class="input"> <br>
                 <button type="submit" name="btnCadastrar">Cadastrar</button> <br>
-                
+
                 <a href="../" style="text-align: center; text-decoration: none;"><button type="button">Logar</button> </a>
             </div>
         </div>
     </form>
-    <script src="../assets/js/validar-campos-utilizador.js"></script> 
+    <script src="../assets/js/validar-campos-utilizador.js"></script>
 </div>
 
 <?php include "../inclusao/foot.php"; ?>

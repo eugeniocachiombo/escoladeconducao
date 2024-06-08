@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: verdana;
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    border: 3px ridge black;
+    width: 40%;
+    height: 50vh;
+}
+
+.form-login {
+
+    width: 40%;
+    height: 50vh;
+}

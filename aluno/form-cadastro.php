@@ -43,7 +43,7 @@
             </div>
         </div>
     </form>
-    <script src="../assets/js/validar-campos-utilizador.js"></script>
+    <script src="../assets/js/validar-campos-utilizador-editar.js"></script>
 </main>
 
 <?php include "../inclusao/footer.php"; ?>

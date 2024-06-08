@@ -9,13 +9,13 @@
     <form method="post" style="width: 100%;">
         <div class="form-principal" style="display: flex; justify-content: space-evenly; align-items: center;">
 
-            <div class="logo" style="display: flex; align-items: center; justify-content: center; font-size: 40px;">
+            <div class="logo left-element" style="display: flex; align-items: center; justify-content: center; font-size: 40px;">
                 <span class="nome-escola" style="font-family: TH Charmonman; font-weight: bold;">
                     <span><i class="fas fa-user"></i></span>Actualizar Instrutor
                 </span>
             </div>
 
-            <div class="formulario">
+            <div class="formulario top-element">
                 <label for="nome" class="text">Nome: </label>
                 <input value="<?php echo $dadosInstrutor["nome"] ?>" type="text" placeholder="Nome completo" name="nome" class="input"> <br>
 
@@ -34,12 +34,12 @@
                     <?php  } ?>
 
                 </select> <br>
+                </div>
 
+            <div class="formulario right-element">
                 <label for="email" class="text">Email:</label>
                 <input value="<?php echo $dadosInstrutor["email"] ?>" type="email" placeholder="email@exemplo.com" name="email" class="input">
-            </div>
-
-            <div class="formulario">
+            
                 <label for="numero_de_telefone" class="text">Número de Telefone:</label>
                 <input value="<?php echo $dadosInstrutor["numero_de_telefone"] ?>" type="text" maxlength="9" placeholder="Número de telefone" name="numero_de_telefone" class="input"> <br>
 

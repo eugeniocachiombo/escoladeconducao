@@ -30,5 +30,5 @@ if (isset($_POST["btnLogar"])) {
 ?>
 
 <?php if (isset($erro)) { ?>
-    <div style="text-align: center; background-color: #edd4da; color: #571524; padding: 10px; border-radius: 5px; margin-bottom: 10px;"><?php echo $erro; ?></div>
+    <div class="top-element" style="text-align: center; background-color: #edd4da; color: #571524; padding: 10px; border-radius: 5px; margin-bottom: 10px;"><?php echo $erro; ?></div>
 <?php } ?>

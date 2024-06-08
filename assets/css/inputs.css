@@ -1,4 +1,4 @@
-.formEmailTel {
+.formulario {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -6,7 +6,7 @@
     max-width: 240px;
   }
   
-  .formEmailTel label.text {
+  .formulario label.text {
     font-size: 0.75rem;
     color: #222;
     font-weight: 700;
@@ -17,8 +17,10 @@
     background: white;
     width: fit-content;
   }
+
   
-  .formEmailTel input[type=text].input {
+  .formulario input[type=text].input, input[type=email].input, 
+  input[type=password].input, input[type=date].input, .select  {
     padding: 11px 10px;
     font-size: 0.75rem;
     border: 2px #222 solid;
@@ -26,7 +28,8 @@
     background: white;
   }
   
-  .formEmailTel input[type=text].input:focus {
+  .formulario input[type=text].input:focus, input[type=email].input:focus, 
+  input[type=password].input:focus, input[type=date].input:focus {
     outline: none;
   }
   

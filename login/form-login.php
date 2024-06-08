@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="assets/css/inputs.css">
+<link rel="stylesheet" href="../assets/css/inputs.css">
 
-<div class="formEmailTel">
+<div class="formulario">
     <h1>Autenticar</h1> <hr> <br>
     <label for="input" class="text">Email ou Telefone:</label>
     <input type="text" placeholder="Usuário" name="emailTel" class="input"> <br>

@@ -9,5 +9,5 @@
     <input type="text" placeholder="******" name="passe" class="input"> <br>
 
     <button> Entrar </button> <br>
-    <a href="../cadastroAdmin/form-cadastro.php" style="text-align: center; text-decoration: none;">Cadastrar-se</a>
+    <a href="../admin/form-cadastro.php" style="text-align: center; text-decoration: none;">Cadastrar-se</a>
 </div>

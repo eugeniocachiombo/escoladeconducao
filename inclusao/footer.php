@@ -47,9 +47,6 @@ footer {
     margin-right: 5px;
 }
 
-.mapa {
-    
-}
 
 </style>
 

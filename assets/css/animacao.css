@@ -1,0 +1,51 @@
+.left-element {
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.right-element {
+    animation: slideFromRight 1s ease forwards;
+}
+
+.top-element {
+    animation: slideFromTop 1s ease forwards;
+}
+
+.bottom-element {
+    animation: slideFromBottom 1s ease forwards;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

@@ -6,13 +6,13 @@
     <form action="" method="post" style="width: 100%;">
         <div class="form-principal" style="display: flex; justify-content: space-evenly; align-items: center;">
 
-            <div class="logo" style="display: flex; align-items: center; justify-content: center; font-size: 40px;">
+            <div class="logo left-element" style="display: flex; align-items: center; justify-content: center; font-size: 40px;">
                 <span class="nome-escola" style="font-family: TH Charmonman; font-weight: bold;">
                     <span><i class="fas fa-user"></i></span>Cadastrar Administrador <!-- Alterado o texto para Cadastrar Administrador -->
                 </span>
             </div>
 
-            <div class="formulario">
+            <div class="formulario bottom-element">
                 <h1>Cadastrar</h1>
                 <hr> <br>
                 <label for="nome" class="text">Nome: </label>
@@ -32,7 +32,7 @@
                 <input type="email" placeholder="email@exemplo.com" name="email" class="input">
             </div>
 
-            <div class="formulario">
+            <div class="formulario top-element">
                 <label for="palavra_passe" class="text">Palavra-passe:</label>
                 <input type="password" placeholder="******" name="palavra_passe" class="input"> <br>
 

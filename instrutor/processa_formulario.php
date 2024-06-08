@@ -1,4 +1,6 @@
 <?php include "../dao/instrutorDao.php"; ?>
+<?php include "../dao/especialidadeDao.php"; ?>
+<?php include "../dao/usuarioEspecialidadeDao.php"; ?>
 
 <?php // Cadastrar
 if (isset($_POST["btnCadastrar"] )) {
@@ -61,6 +63,22 @@ if (isset($_POST["btnEliminar"])) {
         echo '<div style="text-align: center; background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Instrutor eliminado com sucesso!</div>';
     } else {
         echo '<div style="text-align: center; background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Erro ao eliminar instrutor. Por favor, tente novamente.</div>';
+    }
+}
+?>
+
+<?php // Especializar
+if (isset($_POST["btnEspecializar"] )) {
+    $especialidade_id = $_POST["especialidade_id"];
+    $usuario_id = $_POST["usuario_id"];
+
+    $especializar = new UsuarioEspecialidade($usuario_id, $especialidade_id) ;
+    $especializarDao = new UsuarioEspecialidadeDao();
+    $resultado = $especializarDao->cadastrarRelacaoUsuarioEspecialidade($usuario_id, $especialidade_id);
+    if ($resultado) {
+        echo '<div style="text-align: center; background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Instrutor especializaddo com sucesso!</div>';
+    } else {
+        echo '<div style="text-align: center; background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Erro ao especializar instrutor. Por favor, tente novamente.</div>';
     }
 }
 ?>

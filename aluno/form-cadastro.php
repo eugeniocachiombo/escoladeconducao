@@ -23,6 +23,7 @@
 
                 <label for="genero" class="text">Gênero:</label>
                 <select name="genero" class="input select">
+                    <option style="display: none;">Selecione...</option>
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
                 </select> <br>
@@ -44,6 +45,7 @@
             </div>
         </div>
     </form>
+    <script src="../assets/js/validar-campos-utilizador.js"></script>
 </main>
 
 <?php include "../inclusao/footer.php"; ?>

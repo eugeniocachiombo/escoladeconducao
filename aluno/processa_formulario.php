@@ -6,11 +6,10 @@ if (isset($_POST["btnCadastrar"] )) {
     $dataNascimento = $_POST["data_nascimento"];
     $genero = $_POST["genero"];
     $email = $_POST["email"];
-    $palavraPasse = $_POST["palavra_passe"];
     $numeroTelefone = $_POST["numero_de_telefone"];
     $numeroSecundario = $_POST["numero_secundario"];
 
-    $aluno = new Aluno($nome, $dataNascimento, $genero, 'aluno', $email, $palavraPasse, $numeroTelefone, $numeroSecundario);
+    $aluno = new Aluno($nome, $dataNascimento, $genero, 'aluno', $email, null, $numeroTelefone, $numeroSecundario);
     $alunoDao = new AlunoDao();
     $resultado = $alunoDao->cadastrarAluno($aluno);
     if ($resultado) {

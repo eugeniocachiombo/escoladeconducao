@@ -10,7 +10,7 @@
             <h1><span><i class="fas fa-list"></i></span>Lista de alunos</h1>
         </caption>
 
-        <thead style="background-color: cadetblue;color: white">
+        <thead class="left-element" style="background-color: cadetblue;color: white">
             <tr>
                 <th style="width: 5%;">ID</th>
                 <th style="width: 20%;">Nome</th>

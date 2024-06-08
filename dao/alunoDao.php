@@ -8,15 +8,14 @@ class AlunoDao {
     public function cadastrarAluno($aluno) {
         try {
             $conexao = getConexao(); 
-            $stmt = $conexao->prepare("insert INTO usuario (nome, data_nascimento, genero, acesso, email, palavra_passe, numero_de_telefone, numero_secundario) 
-                                       VALUES (:nome, :dataNascimento, :genero, :acesso, :email, :palavraPasse, :numeroTelefone, :numeroSecundario)");
+            $stmt = $conexao->prepare("insert INTO usuario (nome, data_nascimento, genero, acesso, email, numero_de_telefone, numero_secundario) 
+                                       VALUES (:nome, :dataNascimento, :genero, :acesso, :email, :numeroTelefone, :numeroSecundario)");
 
             $stmt->bindValue(':nome', $aluno->getNome());
             $stmt->bindValue(':dataNascimento', $aluno->getDataNascimento());
             $stmt->bindValue(':genero', $aluno->getGenero());
             $stmt->bindValue(':acesso', $aluno->getAcesso());
             $stmt->bindValue(':email', $aluno->getEmail());
-            $stmt->bindValue(':palavraPasse', $aluno->getPalavraPasse());
             $stmt->bindValue(':numeroTelefone', $aluno->getNumeroTelefone());
             $stmt->bindValue(':numeroSecundario', $aluno->getNumeroSecundario());
             $stmt->execute();

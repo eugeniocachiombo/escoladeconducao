@@ -5,10 +5,9 @@
 <div class="principal">
     <form action="" method="post" style="width: 100%;">
         <div class="form-principal" style="display: flex; justify-content: space-evenly; align-items: center;">
-
             <div class="logo left-element" style="display: flex; align-items: center; justify-content: center; font-size: 40px;">
                 <span class="nome-escola" style="font-family: TH Charmonman; font-weight: bold;">
-                    <span><i class="fas fa-user"></i></span>Cadastrar Administrador <!-- Alterado o texto para Cadastrar Administrador -->
+                    <span><i class="fas fa-user"></i></span>Cadastrar Administrador 
                 </span>
             </div>
 

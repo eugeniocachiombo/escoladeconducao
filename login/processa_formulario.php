@@ -9,7 +9,7 @@ if (isset($_POST["btnLogar"])) {
         $passe = $_POST["passe"];
         
         $conexao = getConexao();
-        $stmt = $conexao->prepare("select * FROM usuario WHERE email = :email OR numero_de_telefone = :telefone AND palavra_passe = :passe");
+        $stmt = $conexao->prepare("select * FROM usuario WHERE email = :email OR numero_de_telefone = :telefone AND palavra_passe = :passe AND acesso = 'admin' ");
         $stmt->bindParam(':email', $emailTel);
         $stmt->bindParam(':telefone', $emailTel);
         $stmt->bindParam(':passe', $passe);

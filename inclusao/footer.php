@@ -1,16 +1,4 @@
 <style>
-    /* Estilos Globais */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos do Rodapé */
 footer {
     background-color: #222;
     min-height: 20vh;
@@ -46,11 +34,8 @@ footer {
 .info p i {
     margin-right: 5px;
 }
-
-
 </style>
 
-<?php if (isset($_SESSION["usuario_id"])) { ?>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
@@ -61,7 +46,7 @@ footer {
         <div class="info">
             <h2>Informações da Escola</h2>
             <p><i class="fas fa-map-marker-alt"></i> Endereço: Kimbango, Luanda, Angola</p>
-            <p><i class="fas fa-phone"></i> Telefone: (+244) 922-000- 00</p>
+            <p><i class="fas fa-phone"></i> Telefone: (+244) 922-222-222</p>
             <p><i class="far fa-envelope"></i> Email: escoladeconducao@gmail.com</p>
         </div>
         <div class="mapa" >
@@ -69,6 +54,6 @@ footer {
         </div>
     </div>
 </footer>
-<?php } ?>
+
 
 

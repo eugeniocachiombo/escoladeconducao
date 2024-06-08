@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <style>
     header {
         background-color: cadetblue;
@@ -59,8 +61,6 @@
     }
 </style>
 
-<?php if (isset($_SESSION["usuario_id"])) { ?>
- 
 <header>
     <a href="#" class="logotipo" style="font-size: 35px;">
         <?php
@@ -91,9 +91,14 @@
                     <li><a href="../veiculo">Listar</a></li>
                 </ul>
             </li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="../terminar_sessao/index.php">Terminar Sessão</a></li>
         </ul>
     </nav>
 </header>
 
-<?php } ?>
+<div style="background-color: rgb(36, 59, 59); color: white; padding: 5px;">
+    <?php
+    $usuario = $_SESSION["usuario"];
+    ?>
+    <i class="fas fa-user"></i><b> <?php echo ucfirst($usuario["nome"]); ?> </b>
+</div>

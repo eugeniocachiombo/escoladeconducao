@@ -1,4 +1,5 @@
 <?php
-    session_destroy();
+    session_start();
+    session_destroy(); 
     echo "<script> window.location.pathname = 'escoladeconducao/'; </script>";
 ?>

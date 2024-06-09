@@ -82,3 +82,17 @@ if (isset($_POST["btnEspecializar"] )) {
     }
 }
 ?>
+
+<?php  // Eliminar Especializacao
+if (isset($_POST["btnEliminarEspecializacao"])) {
+    $id = $_POST["id"];
+    $especializarDao = new UsuarioEspecialidadeDao();
+    $resultado = $especializarDao->eliminarRelacaoUsuarioEspecialidade($id);
+
+    if ($resultado) {
+        echo '<div style="text-align: center; background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Especialização do instrutor eliminado com sucesso!</div>';
+    } else {
+        echo '<div style="text-align: center; background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 5px; margin-bottom: 10px;">Erro ao eliminar sspecialização instrutor. Por favor, tente novamente.</div>';
+    }
+}
+?>

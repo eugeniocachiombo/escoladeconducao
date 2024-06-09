@@ -72,8 +72,6 @@ class UsuarioEspecialidadeDao {
             return false;
         }
     }
-    
-
    
     public function eliminarRelacaoUsuarioEspecialidade($id) { 
         try {

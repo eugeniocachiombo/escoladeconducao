@@ -28,12 +28,12 @@
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
                 </select> <br>
+                
+                <label for="email" class="text">Email:</label>
+                <input type="email" placeholder="email@exemplo.com" name="email" class="input">
             </div>
 
             <div class="formulario right-element">
-                <label for="email" class="text">Email:</label>
-                <input type="email" placeholder="email@exemplo.com" name="email" class="input">
-            
                 <label for="numero_de_telefone" class="text">Número de Telefone:</label>
                 <input type="text" maxlength="9" placeholder="Número de telefone" name="numero_de_telefone" class="input"> <br>
 
